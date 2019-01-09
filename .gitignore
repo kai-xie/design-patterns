@@ -1,0 +1,8 @@
+/bazel-*
+*/bazel-*
+/bazel_pip
+/.bazelrc
+.vscode/
+*.pyc
+__pycache__
+*.swp
