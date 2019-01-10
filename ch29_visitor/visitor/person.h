@@ -3,7 +3,8 @@
 
 #include <string>
 #include <iostream>
-#include "visitor/visitor_base.h"
+// #include "visitor/visitor_base.h"
+class VisitorBase;
 
 class Person {
  public:

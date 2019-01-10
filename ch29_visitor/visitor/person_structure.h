@@ -1,9 +1,9 @@
 #ifndef DP_PERSON_STRUCTURE_H_
 #define DP_PERSON_STRUCTURE_H_
 
+#include <algorithm>
 #include <memory>
 #include <vector>
-#include <algorithm>
 
 #include "visitor/person.h"
 
@@ -22,7 +22,7 @@ class PersonStructure {
 
   void Detach(Person* person) {
     auto iter = std::find(persons_.begin(), persons_.end(), person);
-    if ( iter != persons_.end()) {
+    if (iter != persons_.end()) {
       persons_.erase(iter);
     }
   }

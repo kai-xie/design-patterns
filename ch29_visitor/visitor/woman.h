@@ -2,7 +2,7 @@
 #define DP_WOMAN_H_
 
 #include "visitor/person.h"
-#include "visitor/visitor_base.h"
+class VisitorBase;
 
 class Woman : public Person {
  public:

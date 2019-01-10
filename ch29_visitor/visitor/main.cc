@@ -2,12 +2,11 @@
 #include <iostream>
 #include <memory>
 
-#include "visitor/person_structure.h"
 #include "visitor/man.h"
-#include "visitor/woman.h"
-// #include "visitor/visitor_base.h"
-#include "visitor/visitor_success.h"
+#include "visitor/person_structure.h"
 #include "visitor/visitor_failed.h"
+#include "visitor/visitor_success.h"
+#include "visitor/woman.h"
 
 using namespace std;
 int main() {
@@ -21,7 +20,6 @@ int main() {
   ps.Accept(v_s.get());
   std::unique_ptr<VisitorFailed> v_f(new VisitorFailed());
   ps.Accept(v_f.get());
-
 
   return 0;
 }
